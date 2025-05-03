@@ -9,7 +9,7 @@ public class Main {
         List<String> firstClients = List.of("Anya", "Sveta", "Olya", "Alexandra",
                 "Ruslana", "Olesya", "Vika");
 
-        Queue<String> queue = new LinkedList<>(firstClients);
+        Queue<String> queue = new ArrayDeque<>(firstClients);
 
         while (!queue.isEmpty()) {
             String name = queue.poll();
